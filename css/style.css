@@ -555,3 +555,39 @@ body {
   max-width: 440px;
   line-height: 1.7;
 }
+
+.link__container {
+  width: 280px;
+  margin: 18px auto;
+  padding: 8px 18px;
+  background-color: #e8527a;
+  border-radius: 90px;
+  border-bottom: 4px solid #ad2b4e;
+  cursor: pointer;
+  animation: vibracion .4s ease-in-out .8, transform .8s ease-in;
+}
+
+.link__container:hover {
+  transform: scale(0.96);
+}
+
+@keyframes vibracion {
+  0% {
+    transform: rotateZ(6deg);
+  }
+  50% {
+    transform: rotateZ(-4deg);
+  }
+  75% {
+    transform: rotateZ(4deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.group__link {
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
