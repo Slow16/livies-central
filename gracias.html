@@ -42,7 +42,7 @@
             <path d="M12 0l1.5 9h9l-7.5 5.5 3 9.5-6-4.5-6 4.5 3-9.5-7.5-5.5h9z" />
         </svg>
 
-        
+
 
         <svg class="decoration sparkle sparkle--4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
             fill="currentColor">
@@ -65,15 +65,36 @@
             <p class="thanks-card__kicker">ೃ⁀➷ solicitud enviada ⋆.˚</p>
             <h1 class="thanks-card__title">Gracias por querer unirte a Livies Central</h1>
 
-            <p class="thanks-card__text">
-                Tu ficha ya fue enviada correctamente. Haz click en el siguiente enlace y solicita unirte al grupo.
-            </p>
-            <p class="link__container"><a class="group__link" href="https://chat.whatsapp.com/JnIpZhJpAWR2wPoqGjSc7q">༅ིྀ⌑𓏲  𝙻𝚒𝚟𝚒𝚎𝚜-𝚐𝚎𝚗𝚎𝚛𝚊𝚕 ೄྀ</a></p>
+            <div id="link-grupo-general" style="display: none;">
+                <p class="thanks-card__text">
+                    Tu ficha ya fue enviada correctamente. Haz click en el siguiente enlace y solicita unirte al grupo.
+                </p>
+                <p class="link__container"><a class="group__link"
+                        href="https://chat.whatsapp.com/JnIpZhJpAWR2wPoqGjSc7q">༅ིྀ⌑𓏲 𝙻𝚒𝚟𝚒𝚎𝚜-𝚐𝚎𝚗𝚎𝚛𝚊𝚕
+                        ೄྀ</a></p>
+            </div>
+
+            <div id="mensaje-revision" style="display: none;">
+                <p class="thanks-card__text">
+                    Tu ficha ya fue enviada correctamente.
+                </p>
+            </div>
             <p class="field__help">El equipo de administración la revisará y, si todo está bien,
                 pronto recibirás respuesta para entrar a la comunidad mediante el grupo de Bienvenida.</p>
 
         </section>
     </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const edad = parseInt(params.get('edad'), 10);
+
+        if (edad >= 15 && edad <= 23) {
+            document.querySelector('#link-grupo-general').style.display = 'block';
+        } else {
+            document.querySelector('#mensaje-revision').style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>

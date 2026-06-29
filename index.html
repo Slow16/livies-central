@@ -107,15 +107,17 @@
         </div>
       </section>
 
-      <section class="field field--mitad">
-        <label class="field__label" for="edad">ᘏ Edad</label>
-        <input class="field__input" type="number" id="edad" name="edad" min="1" max="30" required>
-      </section>
+      <div class="fila__doble">
+        <section class="field field--mitad">
+          <label class="field__label" for="edad">ᘏ Edad</label>
+          <input class="field__input" type="number" id="edad" name="edad" min="1" max="30" required>
+        </section>
 
-      <section class="field field--mitad">
-        <label class="field__label" for="cumpleanos">ᘏ Cumpleaños</label>
-        <input class="field__input" type="date" id="cumpleanos" name="cumpleanos" required>
-      </section>
+        <section class="field field--mitad">
+          <label class="field__label" for="cumpleanos">ᘏ Cumpleaños</label>
+          <input class="field__input" type="date" id="cumpleanos" name="cumpleanos" required>
+        </section>
+      </div>
 
       <section class="field field--mitad">
         <label class="field__label" for="telefono">ᘏ Nº de Teléfono</label>
@@ -161,43 +163,104 @@
       </section>
 
       <section class="reglas">
-        <h2 class="reglas__titulo">๑ Reglas de la comunidad ๑</h2>
-        <p class="reglas__titulo--decoration">꒷︶꒷꒥꒷‧₊˚꒷︶꒷꒥꒷‧₊</p>
+        <div class="reglas__header">
+          <h2 class="reglas__titulo">Reglas de la comunidad</h2>
+          <p class="reglas__titulo--decoration">꒷︶꒷꒥꒷‧₊˚꒷︶꒷꒥꒷‧₊</p>
+        </div>
 
         <div class="reglas__bloque reglas__bloque--estrictas">
-          <p class="reglas__intro"><strong>Estrictas:</strong> el incumplimiento de estas reglas implica expulsión
-            directa y entrada a lista negra.</p>
+          <div class="reglas__bloque-header">
+            <div>
+              <p class="reglas__bloque-titulo">Estrictas</p>
+              <p class="reglas__bloque-sub">Incumplimiento = expulsión directa y lista negra.</p>
+            </div>
+          </div>
           <ol class="reglas__lista">
-            <li class="regla reglas__estrictas">Prohibido el contenido pornográfico o de índole sexual.</li>
-            <li class="regla reglas__estrictas">Prohibido el contenido gore o similar.</li>
-            <li class="regla reglas__estrictas">Prohibido el acoso.</li>
-            <li class="regla reglas__estrictas">Prohibido el spam no relacionado con el tema del grupo.</li>
-            <li class="regla reglas__estrictas">Prohibido compartir información personal de otros miembros.</li>
-            <li class="regla reglas__estrictas">Prohibido enviar cadenas, estafas, links de phishing o "gana dinero
-              fácil"</li>
+            <li class="regla regla--estricta"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                </svg></span><span class="regla__text">Prohibido el contenido pornográfico o de índole sexual.</span>
+            </li>
+            <li class="regla regla--estricta"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                </svg></span><span class="regla__text">Prohibido el contenido gore o similar.</span></li>
+            <li class="regla regla--estricta"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                </svg></span><span class="regla__text">Prohibido el acoso.</span></li>
+            <li class="regla regla--estricta"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                </svg></span><span class="regla__text">Prohibido el spam no relacionado con el tema del grupo.</span>
+            </li>
+            <li class="regla regla--estricta"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                </svg></span><span class="regla__text">Prohibido compartir información personal de otros
+                miembros.</span></li>
+            <li class="regla regla--estricta"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                </svg></span><span class="regla__text">Prohibido enviar cadenas, estafas, links de phishing o "gana
+                dinero fácil".</span></li>
           </ol>
         </div>
 
+        <div class="reglas__separador"></div>
+
         <div class="reglas__bloque reglas__bloque--normales">
-          <p class="reglas__intro"><strong>Normales:</strong> el incumplimiento genera amonestaciones. Con 3
-            amonestaciones, quedas fuera.</p>
-          <ol class="reglas__lista" start="7">
-            <li class="regla">Respeta el tema del grupo (el off-topic excesivo genera amonestación).
-            </li>
-            <li class="regla">Evita pelear o crear drama. Si tienes un problema con alguien, resuélvelo
-              por privado con un admin.</li>
-            <li class="regla">Usa lenguaje respetuoso. No se permiten insultos ni discriminación por
-              género, país o religión.</li>
-            <li class="regla">Los admins tienen la última palabra. Si se te pide bajar el tono, se
-              baja.</li>
-          </ol>
-
-          <div class="container__reglas--nota">
-            <p class="nota_title">Nota</p>
-            <p class="reglas__nota">Si tienes algún problema, puedes escribirle por privado a un admin con confianza.
-            </p>
+          <div class="reglas__bloque-header">
+            <div>
+              <p class="reglas__bloque-titulo">Normales</p>
+              <p class="reglas__bloque-sub">3 amonestaciones = fuera de la comunidad.</p>
+            </div>
           </div>
+          <ol class="reglas__lista" start="7">
+            <li class="regla regla--normal"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg></span><span class="regla__text">Respeta el tema del grupo (el off-topic excesivo genera
+                amonestación).</span></li>
+            <li class="regla regla--normal"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg></span><span class="regla__text">Evita pelear o crear drama. Si tienes un problema con alguien,
+                resuélvelo por privado con un admin.</span></li>
+            <li class="regla regla--normal"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg></span><span class="regla__text">Usa lenguaje respetuoso. No se permiten insultos ni
+                discriminación por género, país o religión.</span></li>
+            <li class="regla regla--normal"><span class="regla__icon"><svg width="15" height="15" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg></span><span class="regla__text">Los admins tienen la última palabra. Si se te pide bajar el tono,
+                se baja.</span></li>
+          </ol>
+        </div>
 
+        <div class="reglas__nota">
+          <span class="reglas__nota-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </span>
+          <p class="reglas__nota-text">Si tienes algún problema, puedes escribirle por privado a un admin con confianza.
+          </p>
         </div>
       </section>
 
@@ -218,7 +281,8 @@
                 fill="black" />
             </svg>
 
-            <svg class="corazon__mitad corazon__mitad--derecha" width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="corazon__mitad corazon__mitad--derecha" width="12" height="24" viewBox="0 0 12 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M3.45 20.03C8.6 15.36 12 12.27 12 8.5C12 5.41 9.58 3 6.5 3C4.76 3 3.09 3.81 2 5.08L0 8H2L0 12L2 11L0 14L3 16L1 18L2 21.35L3.45 20.03Z"
                 fill="black" />
