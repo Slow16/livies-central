@@ -132,7 +132,7 @@ body {
   padding: 18px;
   background-color: var(--color-fondo);
   border-radius: var(--radio-suave);
-  border: 2px dashed #000;
+  border: 1px dashed var(--color-vino-suave);
   box-shadow: var(--sombra-12);
   display: flex;
   flex-direction: column;
@@ -160,7 +160,7 @@ body {
   padding: 12px 16px;
   border: none;
   border-radius: var(--radio-suave);
-  background-color: #e8527a75;
+  background-color: #e8527a5e;
   color: #fff;
   outline: none;
   transition: all 0.4s ease;
@@ -213,7 +213,7 @@ body {
   border-radius: var(--radio-suave);
   font-size: 14px;
   font-weight: 500;
-  border: 2px solid;
+  border: 1px solid var(--color-vino-suave);
   background-color: transparent;
   transition:
     background-color 0.25s ease,
@@ -247,7 +247,7 @@ body {
 .reglas {
   padding: 24px 16px 28px;
   border-radius: 20px;
-  border: 2px dashed #000;
+  border: 1px dashed var(--color-vino-suave);
   background-color: #fff4f7;
   box-shadow: var(--sombra-12);
   color: var(--color-vino);
@@ -621,7 +621,7 @@ body {
   padding: 18px;
   border-radius: var(--radio-suave);
   background-color: #ffffff;
-  border: 2px dashed #000;
+  border: 1px dashed var(--color-vino-suave);
   transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
