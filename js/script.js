@@ -97,7 +97,7 @@ function separarFecha(valorInput) {
 
 const form = document.querySelector('#ficha-form');
 
-form.addEventListener('submit', async function(evento) {
+form.addEventListener('submit', async function (evento) {
   evento.preventDefault();
 
   const fechaInput = document.querySelector('#cumpleanos').value;
@@ -131,7 +131,8 @@ form.addEventListener('submit', async function(evento) {
       body: datos
     });
 
-    window.location.href = 'gracias.html';
+    const edad = document.querySelector('#edad').value;
+    window.location.href = 'gracias.html?edad=' + encodeURIComponent(edad);
   } catch (error) {
     console.error('Error enviando el formulario:', error);
     alert('No se pudo enviar el formulario. Inténtalo otra vez.');
